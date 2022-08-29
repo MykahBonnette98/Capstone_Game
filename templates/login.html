@@ -1,0 +1,31 @@
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Login</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/login.css') }}">
+   </head>
+   <body>
+      <h1>BABY PYTHON</h1>
+      <div>
+         <h2>LOGIN</h2>
+         <form action='/login' method="post">
+            <input type ="email" name ="email" placeholder="EMAIL">
+            <input type ="password" name ="password" placeholder="PASSWORD">
+            <input id="button" type="submit" value="SUBMIT">
+         </form>
+      </div>
+      <div>
+         <h3>REGISTER</h3>
+         <form action="{{url_for('register') }}" method ="POST">
+            <input type="email" name="email" placeholder="EMAIL">
+            <input type="text" name="username" placeholder="USERNAME">
+            <input type="password" name="password" placeholder="PASSWORD">
+            <input id="button" type ="submit" value="SUBMIT">
+         </form>
+      </div>
+      <div>
+         <img id="snake" src="https://thumbs.gfycat.com/ScientificImpeccableBluejay-max-1mb.gif">
+      </div>
+   </body>
+</html>

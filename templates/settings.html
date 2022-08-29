@@ -1,0 +1,35 @@
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title href="{{url_for("settings")}}">SETTINGS</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/settings.css') }}">
+   </head>
+   <body>
+      <a id="profile-link" href="{{ url_for('profile')}}">PROFILE</a>
+      <a id="logout-link" href="{{ url_for('logout')}}">LOGOUT</a>
+      <div>
+         <h1>SETTINGS</h1>
+         <h2>UPDATE</h2>
+      </div>
+      <div>
+         <form  method="get" action="">    
+            <label>UserName: {{ session['username'] }}</label>    
+            <input type="text" id="Username" placeholder="Username">   
+            <label>Email:</label>    
+            <input type="email" id="email" placeholder="Email">      
+            <label>Password:</label>    
+            <input type="password" id="password" placeholder="Password">    
+      </div>
+      </form> 
+      <div> 
+         <button type="button" value="Sumbit">SUMBIT</button>     
+      </div>
+      <div>
+         <h3>DIFFICULTY LEVEL</h3>
+         <button id="mode1">EASY</button>
+         <button id="mode2">MEDIUM</button>
+         <button id="mode3">HARD</button>
+      </div>
+      <body>
+</html>

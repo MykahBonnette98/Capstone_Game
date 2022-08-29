@@ -1,0 +1,78 @@
+TITLE
+Baby Python Game
+
+Using Flask as the Framework
+
+Frontend HTML, CSS, Javscript
+Backend Python
+
+Located in the requirements file
+After requirements are installed and flask is ran
+
+LOGIN/REGISTER PAGE
+Using Flask Login
+Login and register page will be displayed 
+After login/register user will be redirected to the game
+Users username will welcome at top left of the page
+Top left of the page is the users profile
+
+GAME
+Game is inspired by Flappy Bird Game from 2013 
+Point of the game is to dodge as many pipes and servive as long as possible
+Press Enter to start
+Use up arrow key on keyboard to start dodging pipes
+Game ends after collsion with pipes, ground
+Press enter to restart game
+Current score is displayed top left,one score for each pipe dodged
+Highscore is sent to the backend and displayed in the profile
+
+PROFILE 
+Users profile is displayed with character under username
+Highscore box with users highscore from the game
+Store box that leads to another page with upgrades for game (future mvp's)
+Settings box that leads to another page with options to change username,email or password (future mvp's)
+Learn more box with some information about the Green Tree Python from the game 
+
+MVP 
+Login
+Register
+Game
+Profile
+Score
+Highscore
+
+FUTRE MVP
+Settings/Change user account information
+Settings/Change game difficulty
+Upgrade Character
+Upgrade Maps
+Upgrade Skins
+Upgrade Pipes
+Revive option after collsion with pipes
+Multiplayer option 
+
+DEPENDENCIES
+click==8.1.3
+Flask==2.2.2
+itsdangerous==2.1.2
+Jinja2==3.1.2
+MarkupSafe==2.1.1
+Werkzeug==2.2.2
+
+DATABASE 
+PostgreSQL
+Table- users
+Collumns- username,email,password,highscore
+
+FUNCTIONS APP.Py
+home
+login
+register
+game
+highscore
+profile
+more
+settings
+store
+loggout
+db.create_all

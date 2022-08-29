@@ -1,0 +1,25 @@
+<html lang="en">
+   <head>
+      <meta charset="utf-8"/>
+      <link rel="icon" href="data:;base64,=">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/game.css') }}">
+      <title href ="{{url_for('game')}}">Game</title>
+   </head>
+   <body>
+      <a id="profile-link" href="{{ url_for('profile')}}">PROFILE</a>
+      <h1>BABY PYTHON</h1>
+      <h2>Welcome back, {{ session['username'] }}</h2>
+      <div class="background"></div>
+      <img class="snake" src="https://thumbs.gfycat.com/ScientificImpeccableBluejay-max-1mb.gif">
+      <div class="message">
+         Press Enter To Start Game
+      </div>
+      <div class="score">
+         <span class="score_title"></span>
+         <span class="score_val"></span>
+         <span class="highscore" onlcick="highscore_data();"></span>
+      </div>
+      <script  type="text/javascript" src="{{ url_for('static', filename='css/game.js') }}"></script>
+   </body>
+</html>

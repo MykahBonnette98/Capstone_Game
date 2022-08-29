@@ -1,0 +1,39 @@
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title href="{{url_for("profile")}}">Profile</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/profile.css') }}">
+   </head>
+   <body>
+      <a id="game-link" href="{{ url_for('game')}}">START GAME</a>
+      <a id="logout-link" href="{{ url_for('logout')}}">LOGOUT</a>
+      <div id="profile">PROFILE</div>
+      <div>
+         <h1>USERNAME: {{ session['username'] }} </h1>
+         <img id ="snake" src="https://thumbs.gfycat.com/ScientificImpeccableBluejay-max-1mb.gif"> 
+      </div>
+      <div>
+         <h2>
+            <a id="highscore">HIGHSCORE: {{ session['highscore'] }}</a>
+         </h2>
+      </div>
+      <div>
+         <h4> <a id="settings-link" href="{{url_for("settings")}}">SETTINGS</a>
+         </h4>
+      </div>
+      <div>
+         <img id ="settings-image" src="https://d.furaffinity.net/art/hyperspacialartist/1637108029/1637108029.hyperspacialartist_simplecogs.gif"> 
+      </div>
+      <img id ="store-image" src="https://i.gifer.com/embedded/download/1Sz7.gif">    
+      <div>
+         <h5> 
+            <a id="store-link" href="{{url_for("store")}}">STORE</a>
+         </h5>
+      </div>
+      <h6> 
+         <a id="more-link" href="{{url_for("more")}}">LEARN MORE</a>
+         <img id ="more-image" src="https://storage.ko-fi.com/cdn/useruploads/gif_4836ad49-9d75-4b2e-a43a-30421366b08d.gif">   
+      </h6>
+   </body>
+</html>
